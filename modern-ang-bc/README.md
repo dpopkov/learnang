@@ -1,4 +1,6 @@
 # The Modern Angular Bootcamp
 
-## Project pw - Password Generator
+## Project 1: pw - Password Generator
+
+* Add html to component template
 
