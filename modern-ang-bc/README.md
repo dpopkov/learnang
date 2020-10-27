@@ -7,4 +7,6 @@
 * Tracking input state
 * Handling text input
 * Generate a random password
+* Add and Import CSS styling (Bulma)
+* Use structural directive \*ngIf
 
