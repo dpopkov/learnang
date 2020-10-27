@@ -6,4 +6,5 @@
 * Add event and property binding
 * Tracking input state
 * Handling text input
+* Generate a random password
 

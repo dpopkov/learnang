@@ -9,12 +9,33 @@ export class AppComponent {
   useLetters: boolean = false;
   useNumbers: boolean = false;
   useSymbols: boolean = false;
-  passwordLength: number = 0;
+  passwordLength = 0;
   password = '';
 
   onButtonClick() {
-    this.logFields();
-    this.password = 'MY PASSWORD!!!';
+    const numbers = '1234567890';
+    const letters = 'abcdefghijklmnopqrstuvwzyz';
+    const symbols = '!@#$%^&*()';
+    let validChars: string = '';
+    if (this.useNumbers) {
+      validChars += numbers;
+    }
+    if (this.useLetters) {
+      validChars += letters;
+    }
+    if (this.useSymbols) {
+      validChars += symbols;
+    }
+    let generatedPassword: string = '';
+    for (let i = 0; i < this.passwordLength; i++) {
+      const index = Math.floor(Math.random() * validChars.length);
+      generatedPassword += validChars[index];
+    }
+    this.password = generatedPassword;
+  }
+
+  notReadyToGenerate(): boolean {
+    return this.passwordLength == 0 || !(this.useNumbers || this.useLetters || this.useSymbols);
   }
 
   onChangeUseLetters() {
@@ -30,19 +51,13 @@ export class AppComponent {
   }
 
   onChangeLength(lengthString: string) {
-    const parsedLength = parseInt(lengthString);
-    if (!isNaN(parsedLength)) {
-      this.passwordLength = parsedLength;
+    if (lengthString.length == 0) {
+      this.passwordLength = 0;
+    } else {
+      const parsedLength = parseInt(lengthString);
+      if (!isNaN(parsedLength)) {
+        this.passwordLength = parsedLength;
+      }
     }
-  }
-
-  private logFields(): void {
-    console.log(`
-      About to generate a password with the following:
-      Use letters: ${this.useSymbols}
-      Use numbers: ${this.useNumbers}
-      Use symbols: ${this.useSymbols}
-      Password length: ${this.passwordLength}
-    `);
   }
 }
