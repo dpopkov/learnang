@@ -4,4 +4,6 @@
 
 * Add html to component template
 * Add event and property binding
+* Tracking input state
+* Handling text input
 
