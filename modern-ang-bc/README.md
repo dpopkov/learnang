@@ -1,6 +1,9 @@
 # The Modern Angular Bootcamp
 
-## Project 1: pw - Password Generator
+## Project 2: [cards](cards)
+
+
+## Project 1: [pw - Password Generator](pw)
 
 * Add html to component template
 * Add event and property binding
