@@ -3,6 +3,9 @@
 ## Project 2: [cards](cards)
 
 * Add and import CSS styling (Bulma)
+* Add app-card component
+* Use @Input decorator
+* Use structural directive \*ngFor
 
 
 ## Project 1: [pw - Password Generator](pw)
