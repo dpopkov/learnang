@@ -2,6 +2,8 @@
 
 ## Project 2: [cards](cards)
 
+* Add and import CSS styling (Bulma)
+
 
 ## Project 1: [pw - Password Generator](pw)
 
