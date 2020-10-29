@@ -1,5 +1,7 @@
 # The Modern Angular Bootcamp
 
+## Project 3 (optional): [typing - Typing Challenge](typing) 
+
 ## Project 2: [cards](cards)
 
 * Add and import CSS styling (Bulma)
