@@ -6,4 +6,7 @@
 * Add link Bootstrap styles in angular.json
 * Add ServerComponent, register it in app.module.ts
 * Use styles in components
+* Property binding
+* String interpolation
+* Two-way databinding
 
