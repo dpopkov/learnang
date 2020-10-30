@@ -9,4 +9,8 @@
 * Property binding
 * String interpolation
 * Two-way databinding
+* Use ngIf structural directive with an else condition
+* Styling elements dynamically with ngStyle
+* Applying CSS classes dynamically with ngClass
+* Output lists with ngFor
 
