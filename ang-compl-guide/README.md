@@ -1,5 +1,8 @@
 # Angular - The Complete Guide
 
+## 2 - [Shopping List / Recipe Book](shoplist)
+
+
 ## 1 - [First App](first-app)
 
 * Create initial base project
