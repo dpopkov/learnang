@@ -1,6 +1,7 @@
 # Angular - The Complete Guide
 
 ## 2 - [Shopping List / Recipe Book](shoplist)
+* Add Bootstrap to project: `npm install --save bootstrap'
 
 
 ## 1 - [First App](first-app)
