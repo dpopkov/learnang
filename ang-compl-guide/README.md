@@ -2,6 +2,8 @@
 
 ## 3 - [Databinding App](databinding)
 * Create empty project
+* Add Bootstrap
+* Add code for start
 
 ## 2 - [Shopping List / Recipe Book](shoplist)
 * Add Bootstrap to project: `npm install --save bootstrap'
