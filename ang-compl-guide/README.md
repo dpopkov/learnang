@@ -4,6 +4,9 @@
 * Create empty project
 * Add Bootstrap
 * Add code for start
+* Split app into components
+* Binding to custom properties
+* Binding to custom events
 
 ## 2 - [Shopping List / Recipe Book](shoplist)
 * Add Bootstrap to project: `npm install --save bootstrap'
