@@ -1,8 +1,11 @@
 # Angular - The Complete Guide
 
+## 3 - [Databinding App](databinding)
+* Create empty project
+
 ## 2 - [Shopping List / Recipe Book](shoplist)
 * Add Bootstrap to project: `npm install --save bootstrap'
-
+* Add Components and classes
 
 ## 1 - [First App](first-app)
 
