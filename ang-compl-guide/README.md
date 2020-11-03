@@ -7,6 +7,8 @@
 * Split app into components
 * Binding to custom properties
 * Binding to custom events
+* Use Local Rerefences
+* Get access to template and DOM with @ViewChild decorator
 
 ## 2 - [Shopping List / Recipe Book](shoplist)
 * Add Bootstrap to project: `npm install --save bootstrap'
