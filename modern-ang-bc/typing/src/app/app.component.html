@@ -1,1 +1,27 @@
-<p>Empty for now</p>
+<div class="container">
+  <div class="columns is-centered">
+    <div class="box column is-one-third">
+      <h1 class="title has-text-centered">{{ title }}</h1>
+
+      <p class="has-text-centered">
+        <span
+          *ngFor="let letter of randomText.split(''); let i = index"
+          [class]="classForLetterAt(i)"
+          >{{ letter }}</span
+        >
+      </p>
+
+      <div class="field">
+        <input
+          class="input"
+          type="text"
+          (input)="onInput($event.target.value)"
+        />
+      </div>
+
+      <div *ngIf="solved" class="box has-text-centered">
+        <h1 class="title">Success!</h1>
+      </div>
+    </div>
+  </div>
+</div>
