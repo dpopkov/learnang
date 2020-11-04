@@ -11,6 +11,7 @@
 * Get access to template and DOM with @ViewChild decorator
 * Use ng-content directive to project into component any html from outside
 * Access template from Lifecycle hooks using ViewChild decorator
+* Access ng-content with ContentChild decorator
 
 ## 2 - [Shopping List / Recipe Book](shoplist)
 * Add Bootstrap to project: `npm install --save bootstrap'
