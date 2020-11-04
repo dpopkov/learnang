@@ -1,1 +1,17 @@
-<p>Empty for now</p>
+<h3>Odd Even Game</h3>
+<div>
+  <app-game-control (intervalFired)="onIntervalFired($event)">
+  </app-game-control>
+</div>
+<div>
+  <app-odd
+    *ngFor="let oddNumber of oddNumbers"
+    [numberField]="oddNumber"
+  ></app-odd>
+</div>
+<div>
+  <app-even
+    *ngFor="let evenNumber of evenNumbers"
+    [numberField]="evenNumber"
+  ></app-even>
+</div>

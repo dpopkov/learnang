@@ -1,5 +1,23 @@
 # Angular - The Complete Guide
 
+## 4 - [Assignment: Odd Even Game](odd-even)
+
+### To do:
+1. Create 3 new components: GameControl, Odd and Even
+2. The GameControl Component should have buttons to stat and stop the game
+3. When starting the game, and event (holding an incrementing number) should get emitted each second (ref = setInterval())
+4. The event should be listenable from outside the component
+5. When stopping the game, no more events should get emitted (clearInterval(ref))
+6. A new Odd component should get created for every odd number emitted, the same should happen for the Even Component (on even numbers)
+7. Simply output Odd - NUMBER or Even - NUMBER in the two components
+8. Style the element (e.g. paragraph) holding your output text differently in both components
+
+### Done:
+* Create empty project
+* Add components
+* Use EventEmitter in GameControl component to emit events and handle in parent AppComponent
+* Use Input decorator to pass event data into child components
+
 ## 3 - [Databinding App](databinding)
 * Create empty project
 * Add Bootstrap
