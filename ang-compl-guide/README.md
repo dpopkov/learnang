@@ -9,6 +9,7 @@
 * Binding to custom events
 * Use Local Rerefences
 * Get access to template and DOM with @ViewChild decorator
+* Use ng-content directive to project into component any html from outside
 
 ## 2 - [Shopping List / Recipe Book](shoplist)
 * Add Bootstrap to project: `npm install --save bootstrap'
