@@ -2,6 +2,7 @@
 
 ## 5 - [Shopping List / Recipe Book - ver.2](shoplist)
 * Use binding to implement Navigation
+* Move html from recipe-list to recipe-item component
 
 ## 4 - [Assignment: Odd Even Game](odd-even)
 
