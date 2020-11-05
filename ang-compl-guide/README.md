@@ -4,6 +4,7 @@
 * Use binding to implement Navigation
 * Move html from recipe-list to recipe-item component
 * Use binding to show selected recipe details
+* Allow the User to add ingredients to the shopping list
 
 ## 4 - [Assignment: Odd Even Game](odd-even)
 
