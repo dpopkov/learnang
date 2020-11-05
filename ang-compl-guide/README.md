@@ -1,5 +1,8 @@
 # Angular - The Complete Guide
 
+## 5 - [Shopping List / Recipe Book - ver.2](shoplist)
+* Use binding to implement Navigation
+
 ## 4 - [Assignment: Odd Even Game](odd-even)
 
 ### To do:
