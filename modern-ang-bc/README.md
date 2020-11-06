@@ -1,5 +1,7 @@
 # The Modern Angular Bootcamp
 
+## Project 5: [At the Beach](pages) - Directives in Angular
+
 ## Project 4: [Payment Form](pipes) - Using Pipes
 * Use pipes to format output in template for case, dates, currency
 * Formatting decimals
