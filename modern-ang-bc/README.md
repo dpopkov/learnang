@@ -4,6 +4,9 @@
 * Use pipes to format output in template for case, dates, currency
 * Formatting decimals
 * Displaying JSON for debugging purposes
+* Creating custom pipes: `ng generate pipe pipe-name`
+* Using arguments in pipes
+* Using multiple pipes
 
 ## Project 3 (optional): [typing - Typing Challenge](typing) 
 
