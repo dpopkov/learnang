@@ -2,6 +2,8 @@
 
 ## Project 4: [Payment Form](pipes) - Using Pipes
 * Use pipes to format output in template for case, dates, currency
+* Formatting decimals
+* Displaying JSON for debugging purposes
 
 ## Project 3 (optional): [typing - Typing Challenge](typing) 
 

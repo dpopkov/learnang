@@ -44,8 +44,32 @@
     <div class="col">
       <label><b>Payment Amount</b></label>
       <div>
-        {{ amount | currency }}
+        {{ amount | currency: "RUB" }}
       </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="form-group col">
+      <label>Height</label>
+      <input
+        class="form-control"
+        (input)="onHeightChange($event.target.value)"
+      />
+    </div>
+
+    <div class="col">
+      <label><b>Height</b></label>
+      <div>
+        {{ height | number: "1.2-3" }}
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">Displaying JSON for debugging purposes only:</div>
+    <div class="col">
+      {{ car | json }}
     </div>
   </div>
 </div>
