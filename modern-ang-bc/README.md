@@ -1,5 +1,7 @@
 # The Modern Angular Bootcamp
 
+## Project 4: [Payment Form](pipes) - Using Pipes
+
 ## Project 3 (optional): [typing - Typing Challenge](typing) 
 
 ## Project 2: [cards](cards)
@@ -10,7 +12,7 @@
 * Use structural directive \*ngFor
 
 
-## Project 1: [pw - Password Generator](pw)
+## Project 1: [pw - Password Generator](pw) - Building Components
 
 * Add html to component template
 * Add event and property binding
