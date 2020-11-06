@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pipes';
+  name: string;
+  paymentDate: string;
+  amount: number;
+
+  onNameChange(nameValue: string) {
+    this.name = nameValue;
+  }
+
+  onDateChange(dateValue: string) {
+    this.paymentDate = dateValue;
+  }
+
+  onAmountChange(amountStr: string) {
+    this.amount = parseFloat(amountStr);
+  }
 }
