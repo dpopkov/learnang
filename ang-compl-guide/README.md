@@ -1,6 +1,9 @@
 # Angular - The Complete Guide
 
 ## 6 - [Directives](directives)
+* Use ngClass and ngStyle directives
+* Create custom directives
+* Use HostListener decorator to listen to html element events
 
 ## 5 - [Shopping List / Recipe Book - ver.2](shoplist)
 * Use binding to implement Navigation
