@@ -7,6 +7,7 @@
 * Use HostBinding to bind to host properties
 * Use binding to directive properties
 * Create custom structural directive - appUnless
+* Use ngSwitch structural directive
 
 ## 5 - [Shopping List / Recipe Book - ver.2](shoplist)
 * Use binding to implement Navigation
