@@ -1,5 +1,7 @@
 # Angular - The Complete Guide
 
+## 6 - [Directives](directives)
+
 ## 5 - [Shopping List / Recipe Book - ver.2](shoplist)
 * Use binding to implement Navigation
 * Move html from recipe-list to recipe-item component
