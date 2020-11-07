@@ -4,6 +4,8 @@
 * Use ngClass and ngStyle directives
 * Create custom directives
 * Use HostListener decorator to listen to html element events
+* Use HostBinding to bind to host properties
+* Use binding to directive properties
 
 ## 5 - [Shopping List / Recipe Book - ver.2](shoplist)
 * Use binding to implement Navigation
