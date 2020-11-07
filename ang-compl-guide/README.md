@@ -6,6 +6,7 @@
 * Use HostListener decorator to listen to html element events
 * Use HostBinding to bind to host properties
 * Use binding to directive properties
+* Create custom structural directive - appUnless
 
 ## 5 - [Shopping List / Recipe Book - ver.2](shoplist)
 * Use binding to implement Navigation
