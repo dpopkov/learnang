@@ -1,6 +1,8 @@
 # The Modern Angular Bootcamp
 
 ## Project 5: [At the Beach](pages) - Directives in Angular
+* Using ngClass directive to assign styling class to element
+* Update currentPage property and display images
 
 ## Project 4: [Payment Form](pipes) - Using Pipes
 * Use pipes to format output in template for case, dates, currency
