@@ -6,6 +6,7 @@
 * Intercept a property assignment to update an element's property value
 * Use Input decorator aliasing
 * Replace ngClass directive with the custom appClass directive
+* Build custom structural directive replacing ngFor
 
 ## Project 4: [Payment Form](pipes) - Using Pipes
 * Use pipes to format output in template for case, dates, currency
