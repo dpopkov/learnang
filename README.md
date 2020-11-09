@@ -4,3 +4,5 @@
 
 [The Modern Angular Bootcamp](modern-ang-bc)
 
+[Angular 9. Практический курс по созданию Интернет Магазина](ang9shop)
+
