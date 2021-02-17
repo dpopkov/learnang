@@ -18,4 +18,10 @@ export class DataHandlerService {
   getTasks(): Task[] {
     return TestData.tasks;
   }
+
+  getTasksByCategory(category: Category): Task[] {
+    let tasks = TestData.tasks.filter(c => c.category === category);
+    console.log(tasks);
+    return tasks;
+  }
 }
