@@ -2,3 +2,7 @@
   text-decoration: line-through;
   color: #797979;
 }
+
+.empty-value {
+  color: #9e9e9e;
+}
