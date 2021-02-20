@@ -6,3 +6,49 @@
 .empty-value {
   color: #9e9e9e;
 }
+
+.nodate {
+  color: #9e9e9e;
+}
+
+.nopriority {
+  color: #9e9e9e;
+}
+
+.nocategory {
+  color: #9e9e9e;
+}
+
+.col-id {
+  width: 4%;
+  text-align: center;
+}
+
+.col-title {
+  width: 40%;
+}
+
+.col-priority {
+  width: 10%;
+}
+
+.col-category {
+  width: 10%;
+}
+
+
+.col-select {
+  width: 3%;
+}
+
+.col-operations {
+  width: 8%;
+}
+
+.col-color {
+  width: 1% !important;
+}
+
+.col-date {
+  width: 10% !important;
+}
