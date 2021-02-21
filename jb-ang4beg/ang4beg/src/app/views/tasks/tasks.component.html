@@ -5,7 +5,7 @@
   </div>
   <div class="card-body table-responsive">
 
-    <table [dataSource]="dataSource" mat-table>
+    <table [dataSource]="dataSource" mat-table matSort>
 
       <!-- Color of priority -->
       <ng-container matColumnDef="color">
@@ -25,7 +25,7 @@
 
       <!-- Title of the task  -->
       <ng-container matColumnDef="title">
-        <th *matHeaderCellDef mat-header-cell>Title</th>
+        <th *matHeaderCellDef mat-header-cell mat-sort-header>Title</th>
         <td *matCellDef="let task" [class.completed]="task.completed" class="col-title"
             mat-cell>
           {{task.title}}
@@ -34,7 +34,7 @@
 
       <!-- Date  -->
       <ng-container matColumnDef="date">
-        <th *matHeaderCellDef mat-header-cell>Date</th>
+        <th *matHeaderCellDef mat-header-cell mat-sort-header>Date</th>
         <td *matCellDef="let task"
             [ngClass]="{'completed' : task.completed, 'nodate': task.date == null}" class="col-date"
             mat-cell>
@@ -44,7 +44,7 @@
 
       <!-- Priority  -->
       <ng-container matColumnDef="priority">
-        <th *matHeaderCellDef mat-header-cell>Priority</th>
+        <th *matHeaderCellDef mat-header-cell mat-sort-header>Priority</th>
         <td *matCellDef="let task"
             [ngClass]="{'completed': task.completed, 'nopriority': task.priority == null}" class="col-priority"
             mat-cell>
@@ -54,7 +54,7 @@
 
       <!-- Category  -->
       <ng-container matColumnDef="category">
-        <th *matHeaderCellDef mat-header-cell>Category</th>
+        <th *matHeaderCellDef mat-header-cell mat-sort-header>Category</th>
         <td *matCellDef="let task"
             [ngClass]="{'completed': task.completed, 'nocategory': task.category == null}" class="col-category"
             mat-cell>
@@ -69,5 +69,7 @@
       <tr *matRowDef="let row; columns: displayedColumns;" mat-row></tr>
 
     </table>
+
+    <mat-paginator [pageSizeOptions]="[10, 20, 50, 100]" showFirstLastButtons></mat-paginator>
   </div>
 </div>

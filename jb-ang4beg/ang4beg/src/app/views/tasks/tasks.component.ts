@@ -1,18 +1,24 @@
-import {Component, OnInit} from '@angular/core';
+import {AfterViewInit, Component, OnInit, ViewChild} from '@angular/core';
 import {DataHandlerService} from "../../services/data-handler.service";
 import {Task} from "../../model/Task";
 import {MatTableDataSource} from "@angular/material/table";
+import {MatPaginator} from "@angular/material/paginator";
+import {MatSort} from "@angular/material/sort";
 
 @Component({
   selector: 'app-tasks',
   templateUrl: './tasks.component.html',
   styleUrls: ['./tasks.component.css']
 })
-export class TasksComponent implements OnInit {
+export class TasksComponent implements OnInit, AfterViewInit {
 
   tasks: Task[];
   displayedColumns: string[] = ['color', 'id', 'title', 'date', 'priority', 'category'];
   dataSource: MatTableDataSource<Task>;
+
+  // Table components for sorting and pagination
+  @ViewChild(MatPaginator, {static: false}) private paginator: MatPaginator;
+  @ViewChild(MatSort, {static: false}) private sort: MatSort;
 
   constructor(private dataHandler: DataHandlerService) {
   }
@@ -23,6 +29,10 @@ export class TasksComponent implements OnInit {
     // Datasource can use any type of source (DB, arrays)
     this.dataSource = new MatTableDataSource<Task>();
     this.refreshTable();
+  }
+
+  ngAfterViewInit(): void {
+    this.addTableObjects(); // is called after visual components are drawn on page
   }
 
   toggleTaskCompleted(task: Task) {
@@ -44,5 +54,32 @@ export class TasksComponent implements OnInit {
 
   private refreshTable() {
     this.dataSource.data = this.tasks;
+
+    this.addTableObjects();
+
+    // The commented block of code is taken from example and IT DOES NOT compile!!!
+    /*this.dataSource.sortingDataAccessor = (task, colName) => {
+      // по каким полям выполнять сортировку для каждого столбца
+      switch (colName) {
+        case 'priority': {
+          return task.priority ? task.priority.id : null;
+        }
+        case 'category': {
+          return task.category ? task.category.title : null;
+        }
+        case 'date': {
+          return task.date ? task.date : null;
+        }
+
+        case 'title': {
+          return task.title;
+        }
+      }
+    };*/
+  }
+
+  private addTableObjects() {
+    this.dataSource.sort = this.sort; // sorting table component
+    this.dataSource.paginator = this.paginator; // paginator table component
   }
 }
