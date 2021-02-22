@@ -3,7 +3,7 @@
     <h4 class="card-title">Tasks</h4>
     <p class="card-category">List of all Tasks</p>
   </div>
-  <div class="card-body table-responsive">
+  <div *ngIf="(tasks.length != 0); else noTasksFoundBlock" class="card-body table-responsive">
 
     <table [dataSource]="dataSource" mat-table matSort>
 
@@ -38,7 +38,7 @@
         <td *matCellDef="let task"
             [ngClass]="{'completed' : task.completed, 'nodate': task.date == null}" class="col-date"
             mat-cell>
-          {{task.date | date: "medium"}}
+          {{task.date ? (task.date | date: "medium") : 'No date'}}
         </td>
       </ng-container>
 
@@ -72,4 +72,9 @@
 
     <mat-paginator [pageSizeOptions]="[10, 20, 50, 100]" showFirstLastButtons></mat-paginator>
   </div>
+
+  <ng-template #noTasksFoundBlock>
+    <p class="not-found">No Tasks found</p>
+  </ng-template>
+
 </div>
