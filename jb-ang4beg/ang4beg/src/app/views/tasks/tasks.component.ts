@@ -13,6 +13,7 @@ import {MatSort} from "@angular/material/sort";
 export class TasksComponent implements OnInit, AfterViewInit {
 
   tasks: Task[];
+  // поля для таблицы (те, что отображают данные из задачи - должны совпадать с названиями переменных класса)
   displayedColumns: string[] = ['color', 'id', 'title', 'date', 'priority', 'category'];
   dataSource: MatTableDataSource<Task>;
 
@@ -31,6 +32,7 @@ export class TasksComponent implements OnInit, AfterViewInit {
     this.refreshTable();
   }
 
+  // в этом методе уже все проинциализировано, поэтому можно присваивать объекты (иначе может быть ошибка undefined)
   ngAfterViewInit(): void {
     this.addTableObjects(); // is called after visual components are drawn on page
   }
@@ -52,13 +54,17 @@ export class TasksComponent implements OnInit, AfterViewInit {
     return this.NO_PRIORITY_COLOR;
   }
 
+  // показывает задачи с применением всех текущий условий (категория, поиск, фильтры и пр.)
   private refreshTable() {
     this.dataSource.data = this.tasks;
 
     this.addTableObjects();
 
-    // The commented block of code is taken from example and IT DOES NOT compile!!!
-    /*this.dataSource.sortingDataAccessor = (task, colName) => {
+    // когда получаем новые данные..
+    // чтобы можно было сортировать по столбцам "категория" и "приоритет", т.к. там не примитивные типы, а объекты
+    // @ts-ignore - показывает ошибку для типа даты, но так работает, т.к. можно возвращать любой тип
+    this.dataSource.sortingDataAccessor = (task, colName) => {
+      
       // по каким полям выполнять сортировку для каждого столбца
       switch (colName) {
         case 'priority': {
@@ -70,12 +76,11 @@ export class TasksComponent implements OnInit, AfterViewInit {
         case 'date': {
           return task.date ? task.date : null;
         }
-
         case 'title': {
           return task.title;
         }
       }
-    };*/
+    };
   }
 
   private addTableObjects() {
