@@ -32,7 +32,7 @@ export class TasksComponent implements OnInit, AfterViewInit {
     this.refreshTable();
   }
 
-  // в этом методе уже все проинциализировано, поэтому можно присваивать объекты (иначе может быть ошибка undefined)
+  // в этом методе уже все проинициализировано, поэтому можно присваивать объекты (иначе может быть ошибка undefined)
   ngAfterViewInit(): void {
     this.addTableObjects(); // is called after visual components are drawn on page
   }
