@@ -25,7 +25,7 @@ export class TasksComponent implements OnInit, AfterViewInit {
   }
 
   ngOnInit(): void {
-    this.dataHandler.taskSubject.subscribe(tasks => this.tasks = tasks);
+    this.dataHandler.getAllTasks().subscribe(tasks => this.tasks = tasks);
 
     // Datasource can use any type of source (DB, arrays)
     this.dataSource = new MatTableDataSource<Task>();
